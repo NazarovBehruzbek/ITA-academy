@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/LOGO6666.png"
+import gamburger from"../../images/gamburger.png"
 import "./header.css"
 
 function Header () {
@@ -19,6 +20,7 @@ function Header () {
                <div className="menu-btn">
                <li className="nav-item"><div className="nav-btn">Kurslarni ko'rish</div></li>
                </div>
+               <div className="sidebar-menu"><img style={{width:'30px'}} src={gamburger} alt="Hamburger" /></div>
             </ul>
             </div>
         </div>
