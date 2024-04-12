@@ -36,7 +36,7 @@ function Consulting() {
         <>
             <div className="container">
                 <div className="consult-wrapper">
-                    <div className="card-item1">
+                    <div className="card-item1" data-aos="zoom-in">
                         <h2 className="consult-title">
                             IT - bu kelajak, zamonaviy kasblardan birini IT Ta'lim Academy bilan tajribali ustozlardan o'rganing!
                         </h2>
@@ -52,7 +52,7 @@ function Consulting() {
                             </div>
                         </div>
                     </div>
-                    <div className="card-item2">
+                    <div className="card-item2" data-aos="zoom-in">
                         <h2 className="card-item2-title">Bepul konsultatsiya</h2>
                         <p className="card-item2-text">
                             Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!
