@@ -11,8 +11,9 @@ import Teachers from "./Compoonents/Teachers/Teachers";
 function App() {
   useEffect(() => {
     AOS.init({
-        duration: 1000, // Animation duration in milliseconds
-        easing: 'ease-in-out', // Animation easing
+        duration: 1000,
+        offset: 100,
+        easing: 'ease-in-out', 
     });
 }, []);
   

@@ -1,10 +1,62 @@
 .teachers{
     height: 100vh;
 }
-.arrow-left{
+.teacher-title{
+   font-size: 45px;
+   color: rgba(0, 9, 41, 0.7);
+   font-family: var(--main-font);
+   margin-bottom: 30px;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
     cursor: pointer;
 }
-.right-img{
+.right-img,.left-img{
     width: 50px;
-    
+}
+.right-img{
+    transform: rotate(180deg);
+}
+.slider-container{
+    overflow: hidden;
+}
+.teachers-card{
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 95% !important;
+   margin-left: 5px;
+}
+.infos-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.user-img{
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /
+}
+.user-title{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.user-text{
+    font-size: 20px;
+    color: rgba(0, 9, 41, 0.7);
+}
+.teacher-about{
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 15px;
 }
