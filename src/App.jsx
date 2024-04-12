@@ -5,6 +5,7 @@ import HomePage from "./Compoonents/homePage/homePage"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Courses from "./Compoonents/Courses/Courses";
+import Consulting from "./Compoonents/Consulting/Consulting";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
      <HomePage/>
      <About/>
      <Courses/>
+     <Consulting/>
     </>
   )
 }

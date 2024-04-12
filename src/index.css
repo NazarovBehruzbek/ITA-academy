@@ -11,3 +11,7 @@
 .active{
   color: #D09324 !important;
 }
+:root {
+  --main-color: #C60205; 
+  --main-font:SF Pro Display;
+}
