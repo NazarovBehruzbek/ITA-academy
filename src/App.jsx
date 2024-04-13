@@ -10,6 +10,7 @@ import Teachers from "./Compoonents/Teachers/Teachers";
 import Fakt from "./Compoonents/Fakt/Fakt";
 import Choose from "./Compoonents/Choose/Choose";
 import Foter from "./Compoonents/Foter/Foter";
+import { Outlet } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -23,13 +24,9 @@ function App() {
   return (
     <>
      <Header/>
-     <HomePage/>
-     <About/>
-     <Courses/>
-     <Consulting/>
-     <Teachers/>
-     <Fakt/>
-     <Choose/>
+     <main>
+      <Outlet/>
+     </main>
      <Foter/>
     </>
   )

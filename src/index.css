@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .container {
   width: 95%;
@@ -9,9 +10,12 @@
   max-width: 1250px;
 }
 .active{
-  color: #D09324 !important;
+  color: #C60205;
 }
 :root {
   --main-color: #C60205; 
   --main-font:SF Pro Display;
+}
+a{
+  color:black;
 }

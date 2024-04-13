@@ -49,3 +49,24 @@
     font-size: 20px;
     text-align: center;
 }
+.foter-menu p {
+    cursor: pointer;
+}
+.foter-menu p:hover {
+    color: var(--main-color);
+}
+@media screen and (max-width:760px) {
+    .foter-infos{
+        display: block;
+    }
+    .foter-menu{
+        display: block;
+    }
+    .foter-phone{
+        text-align: left;
+        padding: 20px 0;
+    }
+    .foter-menu p {
+        padding: 10px 0;
+    }
+}

@@ -19,19 +19,20 @@ function Foter (){
                     <p>Bepul darsga yozilish</p>
                 </div>
               <div>
-              <p className="foter-phone">+998 90 866 60 51</p>
+                <a href="tel:+998908666051"><p className="foter-phone">+998 90 866 60 51</p></a>
+            
               <div className="social">
                     <div className="social-item">
-                        <img className="instagram-img" src={instagram} alt="Error" />
+                       <a href="" target="_blank"> <img className="instagram-img" src={instagram} alt="Error" /></a>
                     </div>
                     <div className="social-item">
-                        <img className="facebok-img" src={facebook} alt="Error" />
+                      <a href="" target="_blank"> <img className="facebok-img" src={facebook} alt="Error" /></a>
                     </div>
                     <div className="social-item">
-                        <img className="telegram-img" src={telegram} alt="Error" />
+                      <a href="" target="_blank"><img className="telegram-img" src={telegram} alt="Error" /></a>
                     </div>
                     <div className="social-item">
-                        <img className="youtube-img" src={youtube} alt="Error" />
+                     <a href="" target="_blank"><img className="youtube-img" src={youtube} alt="Error" /></a>
                     </div>
                 </div>
               </div>

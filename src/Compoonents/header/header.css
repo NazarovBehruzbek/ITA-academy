@@ -17,10 +17,13 @@
     list-style: none;
     padding: 0 20px;
     font-weight: bold;
-    color: #C60205;
     letter-spacing: 2px;
     cursor: pointer;
     font-size: 20px;
+    color: black !important;
+}
+.navlink-item{
+    color: black;
 }
 .nav-item:nth-child(1){
     padding: 0;
