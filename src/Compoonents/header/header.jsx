@@ -14,9 +14,9 @@ function Header () {
                 <li className="nav-item"><img className="nav-img" src={logo} alt="Error"/></li>
                 </div>
                <div className="menu">
-               <li className="nav-item"><NavLink to="/about" activeClassName="active">Biz haqimizda</NavLink></li>
-                <li className="nav-item"><NavLink to="/course"  activeClassName="active">Kurslar</NavLink></li>
-                <li className="nav-item"><NavLink to="/contact"  activeClassName="active">Kontakt</NavLink></li>
+               <li className="nav-item"><NavLink to="/about" activeclassname="active">Biz haqimizda</NavLink></li>
+                <li className="nav-item"><NavLink to="/course"  activeclassname="active">Kurslar</NavLink></li>
+                <li className="nav-item"><NavLink to="/contact"  activeclassname="active">Kontakt</NavLink></li>
                </div>
                <div className="menu-btn">
                <li className="nav-item"><div className="nav-btn">Kurslarni ko'rish</div></li>

@@ -1,0 +1,97 @@
+.CourseCategory {
+    padding: 50px 0;
+}
+.CourseCategory .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.category-title {
+    font-size: 40px;
+}
+
+.category-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 30px 0;
+}
+.category-item1 {
+    grid-column: 1 / 5;
+    width: 95%;
+}
+.category-item2 {
+    grid-column: span 2;
+    width: 90%;
+}
+.category-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 3px;
+}
+.categorry-img{
+    width: 100%;
+}
+.category-price,.term-payment,.all-courses{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px 20px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.category-price,.all-courses p{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #7065F0;
+    margin-bottom: 1rem;
+}
+.term-payment{
+   padding-bottom: 30px;
+}
+.all-courses{
+    padding-bottom: 15px;
+}
+.term-payment p{
+    color:#FF8A66;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+.term-payment button{
+    display: block;
+    background: #FF8A66;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px;
+    border: 2px solid #FF8A66;
+    margin-top: 1.25rem;;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: var(--main-font);;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.term-payment button:hover{
+    color: #FF8A66;
+    background-color: white;
+}
+.term-payment span{
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-ff);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7E8CA0;
+    cursor: pointer;
+}
+.all-course{
+    margin-top: 20px;
+}
