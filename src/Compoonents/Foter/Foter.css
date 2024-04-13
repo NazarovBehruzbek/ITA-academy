@@ -1,0 +1,51 @@
+.Foter{
+    padding: 50px 0;
+}
+.logo{
+    width: 150px;
+}
+.foter-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .122);
+}
+.foter-menu{
+    display: flex;
+    grid-column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+    column-gap: 2.5rem;
+}
+.instagram-img,.telegram-img,.youtube-img,.facebok-img{
+    cursor: pointer;
+}
+.instagram-img{
+    width: 50px;
+}
+.facebok-img{
+    width: 60px;
+    margin-top: 2px;
+    margin-left: -10px;
+}
+.telegram-img{
+    width: 35px;
+    margin-top: 8px;
+}
+.youtube-img{
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.social{
+    display: flex;
+}
+.foter-text{
+    padding-top: 20px;
+}
+.foter-phone{
+    font-size: 20px;
+    text-align: center;
+}

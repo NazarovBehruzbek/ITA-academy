@@ -38,7 +38,7 @@ function Consulting() {
                 <div className="consult-wrapper">
                     <div className="card-item1" data-aos="zoom-in">
                         <h2 className="consult-title">
-                            IT - bu kelajak, zamonaviy kasblardan birini IT Ta'lim Academy bilan tajribali ustozlardan o'rganing!
+                            IT - bu kelajak, zamonaviy kasblardan birini IT Time Academy bilan tajribali ustozlardan o'rganing!
                         </h2>
                         <div className="wrapper-consult">
                             <div className="card-consult">

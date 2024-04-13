@@ -7,6 +7,9 @@ import 'aos/dist/aos.css';
 import Courses from "./Compoonents/Courses/Courses";
 import Consulting from "./Compoonents/Consulting/Consulting";
 import Teachers from "./Compoonents/Teachers/Teachers";
+import Fakt from "./Compoonents/Fakt/Fakt";
+import Choose from "./Compoonents/Choose/Choose";
+import Foter from "./Compoonents/Foter/Foter";
 
 function App() {
   useEffect(() => {
@@ -25,6 +28,9 @@ function App() {
      <Courses/>
      <Consulting/>
      <Teachers/>
+     <Fakt/>
+     <Choose/>
+     <Foter/>
     </>
   )
 }
