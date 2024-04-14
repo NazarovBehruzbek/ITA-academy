@@ -10,10 +10,10 @@ function AboutWe() {
     <>
       <div className="about-page">
         <div className="container">
-          <h2 className="about-page-title">Biz haqimizda</h2>
-          <img src={Banner} className="about-page_image" alt="ITA image" />
+          <h2 className="about-page-title" data-aos="flip-up">Biz haqimizda</h2>
+          <img data-aos="zoom-in" src={Banner} className="about-page_image" alt="ITA image" />
 
-          <div className="about_content">
+          <div className="about_content" data-aos="zoom-in">
             <h3>O'quv markazi haqida ma'lumot</h3>
             <article>
               IT Time Akademiyasida tajribali ustozlardan sifatli ta’lim oling!{" "}

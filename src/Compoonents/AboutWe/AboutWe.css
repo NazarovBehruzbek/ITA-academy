@@ -94,4 +94,12 @@
             }
         }
     }
+
+@media screen and (max-width:750px) {
+    .about-page {
+        & .container{
+            width: 90%;
+        }
+    }
+    
 }

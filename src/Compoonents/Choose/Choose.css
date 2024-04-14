@@ -50,9 +50,10 @@
 .choose-select{
     cursor: pointer;
 }
-.choose-select:focus{
-    border: none; 
-    
+.modal-select{
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0px 10px;
 }
 
 .choose-input::placeholder {

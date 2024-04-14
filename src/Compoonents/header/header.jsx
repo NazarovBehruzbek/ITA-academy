@@ -5,7 +5,7 @@ import "./header.css"
 import { NavLink } from "react-router-dom";
 import { Drawer } from "antd";
 
-function Header () {
+function Header ({showModal}) {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
     const showDrawer = () => {
@@ -28,6 +28,19 @@ function Header () {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    const handleMenuClick = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        const menuHeight = document.querySelector('.nav').offsetHeight;
+
+        if (section) {
+            const offset = section.offsetTop - menuHeight;
+            window.scrollTo({
+                top: offset,
+                behavior: "smooth",
+            });
+        }
+        setOpen(false)
+    };
     return(
         <>
         <div className={`nav ${scrolled ? 'scrolled' : ''}`}>
@@ -39,10 +52,10 @@ function Header () {
                <div className="menu">
                <li className="nav-item"><NavLink to="/about">Biz haqimizda</NavLink></li>
                 <li className="nav-item"><NavLink to="/course">Kurslar</NavLink></li>
-                <li className="nav-item"><NavLink to="/contact">Mentorlar</NavLink></li>
+                {/* <li className="nav-item"><NavLink className="nav-menu-item">Mentorlar</NavLink></li> */}
                </div>
                <div className="menu-btn">
-               <li className="nav-item"><div className="nav-btn">Bepul konsultatsiya</div></li>
+               <li className="nav-item" onClick={showModal}><div className="nav-btn">Bepul konsultatsiya</div></li>
                </div>
                <div onClick={showDrawer} className="sidebar-menu"><img style={{width:'30px'}} src={gamburger} alt="Hamburger" /></div>
             </ul>
@@ -50,14 +63,14 @@ function Header () {
         </div>
         <Drawer onClose={onClose} open={open}>
         <div className="hamburger-menu">
-            <NavLink className="hamburger-menu-item" onClick={onClose}>Biz haqimizda</NavLink>
+            <NavLink to="/about" className="hamburger-menu-item" onClick={onClose}>Biz haqimizda</NavLink>
         </div>
         <div className="hamburger-menu">
-            <NavLink className="hamburger-menu-item" onClick={onClose}>Kurslar</NavLink>
+            <NavLink className="hamburger-menu-item">Kurslar</NavLink>
         </div>
-        <div className="hamburger-menu">
-            <NavLink className="hamburger-menu-item"  onClick={onClose}>Contact</NavLink>
-        </div>
+        {/* <div className="hamburger-menu">
+            <NavLink className="hamburger-menu-item">Mentorlar</NavLink>
+        </div> */}
         </Drawer>
         </>
     )

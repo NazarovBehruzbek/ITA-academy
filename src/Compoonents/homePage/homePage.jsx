@@ -3,7 +3,7 @@ import banner from "../../assets/banner.png"
 import {Row,Col} from 'antd'
 import "./homePage.css"
 
-function HomePage() {
+function HomePage({showModal}) {
     return (
         <>
             <div className="homePage">
@@ -13,7 +13,7 @@ function HomePage() {
                           <div className="home-infos">
                           <h1 className="home-title">Tajribaga asoslangan <span style={{color:'#C60205'}}>ishonchli</span> kelajak</h1>
                             <p className="sub-title">Qisqa muddatda o’z portfolioyingizga ega bo’ling</p>
-                            <button className="home-btn">Ariza qoldirish</button>
+                            <button className="home-btn" onClick={showModal}>Ariza qoldirish</button>
                           </div>
                         </Col>
                         <Col lg={12} md={24}>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Courses() {
     return (
-        <div className="courses">
+        <div className="courses" id="courses">
             <div className="container">
                 <h2 className="course-title" data-aos="zoom-in-right">O'z sohangizni tanlang</h2>
                 <div className="wrapper">

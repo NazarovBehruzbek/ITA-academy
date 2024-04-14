@@ -23,3 +23,9 @@ main {
   margin-top: 85px;
 }
 
+@media screen and (max-width:600px) {
+  .container{
+    width: 90%;
+  }
+  
+}

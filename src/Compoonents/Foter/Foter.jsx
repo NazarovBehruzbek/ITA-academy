@@ -5,8 +5,12 @@ import instagram from "../../images/instagram-logo.png"
 import telegram from "../../images/telegram.png"
 import youtube from "../../images/Youtube_logo.png"
 import facebook from "../../images/facebok.jpg"
+import { Link } from "react-router-dom";
 
-function Foter (){
+function Foter ({showModal}){
+  const toTop = ()=>{
+    window.scrollTo(0, 0);
+}
     return(
         <>
         <div className="Foter">
@@ -14,9 +18,9 @@ function Foter (){
                <div className="foter-infos">
                <div className="foter-logo" data-aos="flip-up"><img className="logo" src={logo} alt="Logo" /></div>
                 <div className="foter-menu" data-aos="flip-up">
-                    <p>Kurslar</p>
-                    <p>Biz haqimizda</p>
-                    <p>Bepul darsga yozilish</p>
+                  <Link to="/course" onClick={toTop}><p>Kurslar</p></Link>
+                  <Link to="/about" onClick={toTop}>  <p>Biz haqimizda</p></Link>
+                  <p onClick={showModal}>Bepul darsga yozilish</p>         
                 </div>
               <div data-aos="flip-up">
                 <a href="tel:+998908666051"><p className="foter-phone">+998 90 866 60 51</p></a>
