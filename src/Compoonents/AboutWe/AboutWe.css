@@ -1,0 +1,87 @@
+.about-page {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 50px 0;
+
+    & h2 {
+        font-size: 40px;
+        padding: 13px 0 28px 0;
+        font-weight: 700;
+        color: #000929;
+    }
+
+    & .about-page_image {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        margin-bottom: 30px;
+    }
+
+    & .about_content {
+        border: 1px solid #EEEEEE;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 40px 40px 24px 40px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+        & h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000929;
+            margin-bottom: 24px;
+        }
+
+        & article {
+            font-weight: 400;
+            font-size: 16px;
+            color: #000929;
+        }
+
+        & ul {
+            padding-left: 16px;
+        }
+
+        & .about_contact {
+            margin-top: 24px;
+
+            & h4 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000929;
+                margin-bottom: 16px;
+            }
+
+            & .about_contact--items {
+                display: flex;
+                flex-wrap: wrap;
+
+                & .phone,
+                .location,
+                .site {
+                    border: 1px solid #DCE1E7;
+                    border-radius: 10px;
+                    padding: 0.5rem 0.75rem 0.5rem 2.75rem;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    position: relative;
+                    color: #000929;
+                    margin-right: 16px;
+                    margin-bottom: 16px;
+                    position: relative;
+
+                    & img {
+                        position: absolute;
+                        left: 12px;
+
+                    }
+                }
+            }
+        }
+    }
+}
