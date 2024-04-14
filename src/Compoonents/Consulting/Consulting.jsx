@@ -3,6 +3,8 @@ import "./Consulting.css";
 import bannerimg1 from "../../images/banner-img2.png";
 import bannerimg2 from "../../images/banner-img1.png";
 import bannerimg3 from "../../images/banner-img3.png";
+import axios from "axios";
+import { message } from "antd";
 
 function Consulting() {
     const phoneInputRef = useRef(null);
@@ -32,6 +34,31 @@ function Consulting() {
         };
     }, []);
 
+    const onFinish = (event) => {
+        event.preventDefault()
+        const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
+        const chat_id = 7045653787;
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const method = 'POST';
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const messageContent = `Ismi: ${name} \nTelefon raqami: ${phone}`;
+        axios({
+            url: url,
+            method: method,
+            data: {
+                "chat_id": chat_id,
+                "text": messageContent
+            },
+        }).then(res => {
+            document.getElementById("myForm").reset();
+            message.success("Muvaffaqiyatli yuborildi")
+        }).catch(error => {
+            message.error("Xatolik")
+            console.log(error);
+        });
+    };
+
     return (
         <>
             <div className="container">
@@ -57,17 +84,20 @@ function Consulting() {
                         <p className="card-item2-text">
                             Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!
                         </p>
-                        <div className="consult-form">
-                            <input className="form-input" type="text" placeholder="Ismingiz" />
+                      <form id="myForm" onSubmit={onFinish}>
+                      <div className="consult-form">
+                            <input className="form-input" type="text" placeholder="Ismingiz" id="name"/>
                             <input
+                                id="phone"
                                 className="form-input"
                                 type="tel"
                                 defaultValue="+998 "
                                 placeholder="Telefon raqamingiz"
                                 ref={phoneInputRef}
                             />
-                            <button className="form-btn">Yuborish</button>
+                            <button className="form-btn" type="submit">Yuborish</button>
                         </div>
+                      </form>
                     </div>
                 </div>
             </div>

@@ -82,10 +82,10 @@ function ModalForm({ isModalOpen, handleCancel }) {
                         <option value="" disabled>Kursni tanlang</option>
                         {Data && Data.map((item, index) => (
                             <option
-                                value={item.nameUZ}
+                                value={item?.nameUZ}
                                 key={index}
                             >
-                                {item.nameUZ}
+                                {item?.nameUZ}
                             </option>
                         ))}
                     </select>

@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Choose.css"
+import axios from "axios";
+import { message } from "antd";
+import Data from "../CoursesData/Courses"
 
 function Choose () {
     const phoneInputRef = useRef(null);
@@ -26,7 +29,31 @@ function Choose () {
             input.removeEventListener("input", handleInput);
         };
     }, []);
-
+    const onFinish = (event) => {
+        event.preventDefault()
+        const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
+        const chat_id = 7045653787;
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const method = 'POST';
+        const name = document.getElementById("nameInput").value;
+        const course = document.getElementById("chooseKurs").value;
+        const phone = document.getElementById("phoneNumber").value;
+        const messageContent = `Ismi: ${name} \nTelefon raqami: ${phone} \nKursi: ${course}`;
+        axios({
+            url: url,
+            method: method,
+            data: {
+                "chat_id": chat_id,
+                "text": messageContent
+            },
+        }).then(res => {
+            document.getElementById("courseForm").reset();
+            message.success("Muvaffaqiyatli yuborildi")
+        }).catch(error => {
+            message.error("Xatolik")
+            console.log(error);
+        });
+    };
     return (
         <>
         <div className="choose">
@@ -37,23 +64,29 @@ function Choose () {
                     <p className="choose-text">Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta qo'ng'iroq qilishadi.</p>
                 </div>
                 <div className="choose-forms" data-aos="flip-left">
-                <div className="choose-form">
-                            <input className="choose-input" type="text" placeholder="Ismingiz" />
-                            <select className="choose-select"  name="Kurs" id="kurs" >
-                                <option className="choose-option" value="frontend">Frontend</option>
-                                <option className="choose-option" value="frontend">Backend</option>
-                                <option className="choose-option" value="frontend">IOS</option>
-                                <option className="choose-option" value="frontend">Flutter</option>
+                    <form id="courseForm" onSubmit={onFinish}>
+                    <div className="choose-form">
+                            <input className="choose-input" type="text" placeholder="Ismingiz" id="nameInput" required/>
+                            <select className="choose-select"  name="Kurs" id="chooseKurs"   aria-label="Kursni tanlang" required>
+                                <option value="" disabled>Kursni tanlang</option>
+                                {
+                                    Data && Data.map((item,index)=>(
+                                        <option key={index} className="choose-option" value={item?.nameUZ}>{item?.nameUZ}</option>
+                                    ))
+                                }
                             </select>
                             <input
+                                id="phoneNumber"
                                 className="choose-input"
                                 type="tel"
                                 defaultValue="+998 "
                                 placeholder="Telefon raqamingiz"
                                 ref={phoneInputRef}
+                                required
                             />
-                            <button className="choose-btn">Kursga yozilish</button>
+                            <button className="choose-btn" type="submit">Kursga yozilish</button>
                         </div>
+                    </form>
 
                 </div>
 
