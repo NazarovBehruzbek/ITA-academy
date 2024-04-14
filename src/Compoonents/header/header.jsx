@@ -39,10 +39,10 @@ function Header () {
                <div className="menu">
                <li className="nav-item"><NavLink to="/about">Biz haqimizda</NavLink></li>
                 <li className="nav-item"><NavLink to="/course">Kurslar</NavLink></li>
-                <li className="nav-item"><NavLink to="/contact">Kontakt</NavLink></li>
+                <li className="nav-item"><NavLink to="/contact">Mentorlar</NavLink></li>
                </div>
                <div className="menu-btn">
-               <li className="nav-item"><div className="nav-btn">Kurslarni ko'rish</div></li>
+               <li className="nav-item"><div className="nav-btn">Bepul konsultatsiya</div></li>
                </div>
                <div onClick={showDrawer} className="sidebar-menu"><img style={{width:'30px'}} src={gamburger} alt="Hamburger" /></div>
             </ul>

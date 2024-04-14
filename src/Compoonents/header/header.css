@@ -33,10 +33,12 @@
 }
 .hamburger-menu-item{
     color: black !important;
-    font-size: 20px;
-}
-.hamburger-menu{
-    
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 .navlink-item{
     color: black;
@@ -74,5 +76,10 @@
         display: block;
         margin-top: 10px;
         margin-right: 10px;
+    }
+}
+@media screen and (min-width: 330px) and (max-width: 600px) {
+    .ant-drawer-content-wrapper {
+      width: 250px !important
     }
 }

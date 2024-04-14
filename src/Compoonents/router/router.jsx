@@ -3,6 +3,7 @@ import App from "../../App";
 import AboutWe from './../AboutWe/AboutWe';
 import CourseCategory from "./../CourseCategory/CourseCategory"
 import Home from "../Home/Home";
+import Courses from "../Courses/Courses";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutWe />
+      },
+      {
+        path: "/course",
+        element: < Courses/>
       },
       {
         path: "/course/:id",

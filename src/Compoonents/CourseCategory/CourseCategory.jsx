@@ -12,7 +12,9 @@ function CourseCategory() {
         const filteredCourses = Data.filter(item => item.id.toString() === id);
         setCourses(filteredCourses);
     }, [id]);
-
+    const toTop = ()=>{
+        window.scrollTo(0, 0);
+    }
     return (
         <div className="CourseCategory">
             <div className="container">
@@ -67,7 +69,7 @@ function CourseCategory() {
                                     </div>
                                     <div className="all-courses">
                                         <Link to="/"><img style={{ width: '80%', margin: '20px 0' }} src={logo} alt="Logo" /></Link>
-                                        <Link to="/courses">
+                                        <Link onClick={toTop} to="/course">
                                             <p className="all-course">Barcha kurslarni ko'rish</p>
                                         </Link>
                                     </div>
