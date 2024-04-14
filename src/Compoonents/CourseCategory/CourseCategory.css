@@ -17,19 +17,24 @@
 }
 .category-item1 {
     grid-column: 1 / 5;
-    width: 95%;
+    width: 98%;
 }
 .category-item2 {
     grid-column: span 2;
     width: 90%;
+    margin: 0 auto;
 }
 .category-container{
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 3px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
 }
 .categorry-img{
     width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 .category-price,.term-payment,.all-courses{
     border: 1px solid gray;
@@ -39,23 +44,23 @@
     margin-bottom: 30px;
 }
 
-.category-price,.all-courses p{
+.category-price p,.all-courses p{
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    color: #7065F0;
+    color: var(--main-color);
     margin-bottom: 1rem;
 }
 .term-payment{
    padding-bottom: 30px;
 }
 .all-courses{
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 }
 .term-payment p{
-    color:#FF8A66;
+    color: var(--main-color);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -94,4 +99,52 @@
 }
 .all-course{
     margin-top: 20px;
+}
+.all-infos{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    padding-bottom: 40px;
+    margin-top: 1.875rem;
+    margin-bottom: 2.125rem;
+    flex-wrap: wrap;
+}
+.item1-title{
+    color:gray;
+    padding-bottom: 10px;
+}
+.course-description p{
+    line-height: 25px;
+    padding: 20px 0;
+}
+
+@media screen and (max-width:1113px) {
+    .category-wrapper{
+        grid-template-columns: repeat(1, 1fr);     
+    }
+    .category-item2{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .all-infos{
+        width: 100%;
+        /* margin: 0; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .consult-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .card-item2-title{
+        font-size: 30px;
+    }
 }
