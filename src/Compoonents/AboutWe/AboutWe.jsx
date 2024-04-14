@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../assets/banner.png";
+import Banner from "../../assets/aboutbanner.png";
 import PhoneSVG from "../../assets/phone-svgrepo-com.svg";
 import LocationSVG from "../../assets/location-pin-alt-1-svgrepo-com.svg";
 import WebSVG from "../../assets/web-svgrepo-com.svg";
@@ -10,7 +10,7 @@ function AboutWe() {
     <>
       <div className="about-page">
         <div className="container">
-          <h2>O'quv markazi</h2>
+          <h2 className="about-page-title">Biz haqimizda</h2>
           <img src={Banner} className="about-page_image" alt="ITA image" />
 
           <div className="about_content">

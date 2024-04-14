@@ -12,13 +12,13 @@ function Foter (){
         <div className="Foter">
             <div className="container">
                <div className="foter-infos">
-               <div className="foter-logo"><img className="logo" src={logo} alt="Logo" /></div>
-                <div className="foter-menu">
+               <div className="foter-logo" data-aos="flip-up"><img className="logo" src={logo} alt="Logo" /></div>
+                <div className="foter-menu" data-aos="flip-up">
                     <p>Kurslar</p>
                     <p>Biz haqimizda</p>
                     <p>Bepul darsga yozilish</p>
                 </div>
-              <div>
+              <div data-aos="flip-up">
                 <a href="tel:+998908666051"><p className="foter-phone">+998 90 866 60 51</p></a>
             
               <div className="social">
@@ -36,8 +36,8 @@ function Foter (){
                     </div>
                 </div>
               </div>
-               </div>
-               <p className="foter-text">© It Time Acadmey 2021 - 2024 All rights reserved</p>
+               </div >
+               <p data-aos="flip-up" className="foter-text">© It Time Acadmey 2021 - 2024 All rights reserved</p>
             </div>
         </div>
         </>
