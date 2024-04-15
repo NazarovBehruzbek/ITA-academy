@@ -8,10 +8,11 @@ function HomePage({ showModal }) {
         <>
             <div className="homePage">
                 <div className="container">
+                    <h1 style={{display:'none'}}>It Time Academy</h1>
                     <Row>
                         <Col lg={12} md={24}>
                             <div className="home-infos">
-                                <h1 className="home-title">Tajribaga asoslangan <span style={{ color: '#C60205' }}>ishonchli</span> kelajak</h1>
+                                <h2 className="home-title">Tajribaga asoslangan <span style={{ color: '#C60205' }}>ishonchli</span> kelajak</h2>
                                 <p className="sub-title">Qisqa muddatda o’z portfolioyingizga ega bo’ling</p>
                                 <button className="home-btn" onClick={showModal}>Ariza qoldirish</button>
                             </div>
