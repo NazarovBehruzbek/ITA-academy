@@ -19,7 +19,21 @@
     display: flex;
     justify-content: space-between;
 }
-
+.header-item{
+    display: flex;
+}
+.header-title{
+    font-size: 15px;
+    font-weight: 800 !important;
+    color: black;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 80px;
+}
+.nav-img {
+    width: 50px;
+   
+}
 .menu,
 .menu-btn {
     display: flex;
@@ -55,9 +69,6 @@
     padding: 0;
 }
 
-.nav-img {
-    width: 150px;
-}
 
 .nav-btn {
     background: linear-gradient(278.99deg, rgb(244, 16, 16) 30.32%, rgb(198, 2, 5) 100%);

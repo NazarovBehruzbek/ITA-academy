@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/LOGO6666.png"
+import logo from "../../assets/RTTTTT.png"
 import gamburger from "../../assets/gamburger.png"
 import "./header.css"
 import { NavLink } from "react-router-dom";
@@ -47,7 +47,10 @@ function Header({ showModal }) {
                 <div className="container">
                     <ul className="nav-list">
                         <div className="menu-logo">
-                            <li className="nav-item"><NavLink to="/"><img className="nav-img" src={logo} alt="Error" /></NavLink></li>
+                            <li className="nav-item"><NavLink to="/" className="header-item">
+                                <img className="nav-img" src={logo} alt="Error" />
+                                <h1 className="header-title">IT TIME <span style={{color:'#C60205'}}>ACADEMY</span></h1>
+                                </NavLink></li>
                         </div>
                         <div className="menu">
                             <li className="nav-item"><NavLink to="/about">Biz haqimizda</NavLink></li>
