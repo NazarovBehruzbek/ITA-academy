@@ -66,11 +66,8 @@ function Header({ showModal }) {
                     <NavLink to="/about" className="hamburger-menu-item" onClick={onClose}>Biz haqimizda</NavLink>
                 </div>
                 <div className="hamburger-menu">
-                    <NavLink className="hamburger-menu-item">Kurslar</NavLink>
+                    <NavLink to="/course" className="hamburger-menu-item">Kurslar</NavLink>
                 </div>
-                {/* <div className="hamburger-menu">
-            <NavLink className="hamburger-menu-item">Mentorlar</NavLink>
-        </div> */}
             </Drawer>
         </>
     )
