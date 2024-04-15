@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./Teacgers.css"
-import left from "../../images/arrow-left.svg"
-import user from "../../images/backend.png"
+import left from "../../assets/arrow-left.svg"
+import user from "../../assets/backend.png"
 
 function Teachers() {
     let sliderRef = useRef(null);
@@ -76,7 +76,7 @@ function Teachers() {
                                 <div>
                                     <h3 className='user-title'>Nazarov Behruzbek</h3>
                                     <p className='user-text'>Mentor: Grafik dizayn</p>
-                                </div>
+                                </div>assets
                             </div>
                             <p className='teacher-about'>4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.</p>
 

@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "./Consulting.css";
-import bannerimg1 from "../../images/banner-img2.png";
-import bannerimg2 from "../../images/banner-img1.png";
-import bannerimg3 from "../../images/banner-img3.png";
+import bannerimg1 from "../../assets/banner-img2.png";
+import bannerimg2 from "../../assets/banner-img1.png";
+import bannerimg3 from "../../assets/banner-img3.png";
 import axios from "axios";
 import { message } from "antd";
 

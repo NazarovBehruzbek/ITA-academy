@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css"
 import { Row, Col } from 'antd'
-import card from "../../images/card.png"
-import tanga from "../../images/tanga.png"
-import kubok from "../../images/kubok.png"
-import papka from "../../images/papka.png"
-import kompyuter from "../../images/noutbuk.png"
-import sertifikat from "../../images/sertifikat.png"
+import card from "../../assets/card.png"
+import tanga from "../../assets/tanga.png"
+import kubok from "../../assets/kubok.png"
+import papka from "../../assets/papka.png"
+import kompyuter from "../../assets/noutbuk.png"
+import sertifikat from "../../assets/sertifikat.png"
 
 function About() {
     return (
@@ -51,7 +51,7 @@ function About() {
                         <Row>
                             <Col lg={4} md={5} xs={24}> <img className="card-img" src={kompyuter} alt="Error" /> </Col>
                             <Col lg={9} md={9} xs={24}> <h2 className="card-title">Zamonaviy muhit, bepul Coworking va Wi-fi </h2></Col>
-                            <Col lg={11} md={10} xs={24}> <p className="card-text">It Ta'lim Academy o'quv markazi zamon talabiga javob beradigan barcha imkoniyatlar va texnologiyalar bilan jihozlangan. Bularning barchasi bizning o'quvchilarimiz uchun bepul!</p> </Col>
+                            <Col lg={11} md={10} xs={24}> <p className="card-text">It Time Academy o'quv markazi zamon talabiga javob beradigan barcha imkoniyatlar va texnologiyalar bilan jihozlangan. Bularning barchasi bizning o'quvchilarimiz uchun bepul!</p> </Col>
                         </Row>
                     </div>
                     <hr />
@@ -59,7 +59,7 @@ function About() {
                         <Row>
                             <Col lg={4} md={5} xs={24}> <img className="card-img" src={sertifikat} alt="Error" /> </Col>
                             <Col lg={9} md={9} xs={24}> <h2 className="card-title" style={{ width: '100%' }}>Sertifikat </h2></Col>
-                            <Col lg={11} md={10} xs={24}> <p className="card-text">It Ta'lim Academy kurslarini muvaffaqiyatli tamomlagan barcha o'quvchilarga Sertifikat taqdim etiladi!</p> </Col>
+                            <Col lg={11} md={10} xs={24}> <p className="card-text">It Time Academy kurslarini muvaffaqiyatli tamomlagan barcha o'quvchilarga Sertifikat taqdim etiladi!</p> </Col>
                         </Row>
                     </div>
                     <hr />

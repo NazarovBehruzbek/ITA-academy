@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../assets/LOGO6666.png"
 import "./Foter.css"
-import instagram from "../../images/instagram-logo.png"
-import telegram from "../../images/telegram.png"
-import youtube from "../../images/Youtube_logo.png"
-import facebook from "../../images/facebok.jpg"
+import instagram from "../../assets/instagram-logo.png"
+import telegram from "../../assets/telegram.png"
+import youtube from "../../assets/Youtube_logo.png"
+import facebook from "../../assets/facebok.jpg"
 import { Link } from "react-router-dom";
 
 function Foter({ showModal }) {
@@ -23,7 +23,7 @@ function Foter({ showModal }) {
               <p onClick={showModal}>Bepul darsga yozilish</p>
             </div>
             <div data-aos="flip-up">
-              <a href="tel:+998908666051"><p className="foter-phone">+998 90 866 60 51</p></a>
+              <a href="tel:+998947820092"><p className="foter-phone">+998 94 782 00 92</p></a>
 
               <div className="social">
                 <div className="social-item">

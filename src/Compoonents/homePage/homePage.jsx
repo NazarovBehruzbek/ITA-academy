@@ -8,7 +8,6 @@ function HomePage({ showModal }) {
         <>
             <div className="homePage">
                 <div className="container">
-                    <h1 style={{display:'none'}}>It Time Academy</h1>
                     <Row>
                         <Col lg={12} md={24}>
                             <div className="home-infos">

@@ -1,13 +1,12 @@
 // Importing images using ES6 import statements
-import mobilografiyaImg from '../../images/mobilografiya.png';
-import iosImg from '../../images/ios.jpg';
-import frontendImg from '../../images/frontend.png';
-import backendImg from '../../images/backend.png';
-import marketingImg from '../../images/marketing.png';
-import flutterImg from '../../images/flutter.png';
-import javabackendImg from '../../images/javabackend.png';
-import dizaynImg from '../../images/dizayn.png';
-
+import mobilografiyaImg from '../../assets/mobilografiya.png';
+import iosImg from '../../assets/ios.jpg';
+import frontendImg from '../../assets/frontend.png';
+import backendImg from '../../assets/backend.png';
+import marketingImg from '../../assets/marketing.png';
+import flutterImg from '../../assets/flutter.png';
+import javabackendImg from '../../assets/javabackend.png';
+import dizaynImg from '../../assets/dizayn.png';
 // Define the Courses array
 const Courses = [
     {
@@ -15,7 +14,7 @@ const Courses = [
         img_src: mobilografiyaImg,
         nameUZ: 'Mobilografiya',
         price: '4 300 000',
-        duration: 2,
+        duration: 2
     },
     {
         id: 2,

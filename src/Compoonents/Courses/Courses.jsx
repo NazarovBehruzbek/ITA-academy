@@ -1,10 +1,9 @@
 import React from 'react';
 import './courses.css';
 import CoursesData from '../CoursesData/Courses';
-import stars from '../../images/stars.svg';
-import clock from '../../images/clock.svg';
+import stars from '../../assets/stars.svg';
+import clock from '../../assets/clock.svg';
 import { Link } from 'react-router-dom';
-
 function Courses() {
     return (
         <div className="courses" id="courses">

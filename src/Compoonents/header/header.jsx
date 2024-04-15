@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/LOGO6666.png"
-import gamburger from "../../images/gamburger.png"
+import gamburger from "../../assets/gamburger.png"
 import "./header.css"
 import { NavLink } from "react-router-dom";
 import { Drawer } from "antd";
