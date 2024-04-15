@@ -8,7 +8,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('+998 ');
     const [selectedCourse, setSelectedCourse] = useState('');
-    
+
     useEffect(() => {
         const input = phoneInputRef.current;
         const handleFocus = () => {
@@ -38,7 +38,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
         const chat_id = 7045653787;
 
         const messageContent = `Ismi: ${name}\nTelefon raqami: ${phone}\nKurs: ${selectedCourse}`;
-        
+
         try {
             await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
                 chat_id: chat_id,
@@ -59,7 +59,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
     return (
         <Modal open={isModalOpen} onCancel={handleCancel} footer={null}>
             <h2>Kursga yozilish uchun formani to'ldiring</h2>
-            <p style={{fontSize:'20px',lineHeight:'25px',padding:'20px 0'}}>Agar kurs haqida savollaringiz bo'lsa yoki tanlashni bilmasangiz, raqamingizni qoldiring va bizning operatorlarimiz sizga qo'ng'iroq qilishadi.</p>
+            <p style={{ fontSize: '20px', lineHeight: '25px', padding: '20px 0' }}>Agar kurs haqida savollaringiz bo'lsa yoki tanlashni bilmasangiz, raqamingizni qoldiring va bizning operatorlarimiz sizga qo'ng'iroq qilishadi.</p>
             <form onSubmit={handleSubmit}>
                 <div className="consult-form">
                     <input

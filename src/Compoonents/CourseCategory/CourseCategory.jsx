@@ -12,7 +12,7 @@ function CourseCategory() {
         const filteredCourses = Data.filter(item => item.id.toString() === id);
         setCourses(filteredCourses);
     }, [id]);
-    const toTop = ()=>{
+    const toTop = () => {
         window.scrollTo(0, 0);
     }
     return (
@@ -48,11 +48,11 @@ function CourseCategory() {
                                             <p className="item1-title">Kurs turi</p>
                                             <h4>Kunduzgi</h4>
                                         </div>
-                                     </div>
-                                     <div className="course-description">
+                                    </div>
+                                    <div className="course-description">
                                         <h2>Kurs tavsifi</h2>
                                         <p>{item?.description}</p>
-                                     </div>
+                                    </div>
                                 </div>
                                 <div className="category-item2">
                                     <div className="category-price">

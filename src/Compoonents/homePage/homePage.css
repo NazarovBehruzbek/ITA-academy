@@ -1,70 +1,81 @@
 .homePage {
-   background: linear-gradient(to right, #F9F9F8, #f0f4fa);
-   width: 100%;
-   padding-bottom: 130px;
-   position: relative;
+  background: linear-gradient(to right, #F9F9F8, #f0f4fa);
+  width: 100%;
+  padding-bottom: 130px;
+  position: relative;
 }
-.home-infos{
+
+.home-infos {
   margin-top: 130px;
   font-family: SF Pro Display;
 }
-.home-title{
-    font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 4.1875rem;
-    max-width: 38.9375rem;
-    color: #000;
+
+.home-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.1875rem;
+  max-width: 38.9375rem;
+  color: #000;
 }
-.sub-title{ 
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-    max-width: 31.5rem;
-    margin: .75rem 0 0;
-    color: #5b6871;
+
+.sub-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  max-width: 31.5rem;
+  margin: .75rem 0 0;
+  color: #5b6871;
 }
-.home-btn{
-   font-family: SF Pro Display;
-    font-weight: 500;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    border: none;
-    color: #fff;
-    margin: 2.5rem 0 0;
-    padding: .75rem 1.75rem;
-    border-radius: .375rem;
-    background: #C60205;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
+
+.home-btn {
+  font-family: SF Pro Display;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  border: none;
+  color: #fff;
+  margin: 2.5rem 0 0;
+  padding: .75rem 1.75rem;
+  border-radius: .375rem;
+  background: #C60205;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
-.home-img{
-   max-width: 56.25rem;
-   height: 300px;
-   width: 100%;
-   margin-top: 130px;
+
+.home-img {
+  max-width: 56.25rem;
+  height: 300px;
+  width: 100%;
+  margin-top: 130px;
 
 }
+
 @media screen and (max-width:600px) {
-    .home-img{
-      display: none;
-    }
-    .homePage{
-      padding-bottom: 40px;
-    }
-    .home-infos{
-      margin-top: 70px;
-    }
-    .home-title{
-      font-size: 2.5rem;
-      line-height: 3.1875rem;
-    }
+  .home-img {
+    display: none;
+  }
+
+  .homePage {
+    padding-bottom: 40px;
+  }
+
+  .home-infos {
+    margin-top: 70px;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+    line-height: 3.1875rem;
+  }
 }
+
 @media screen and (max-width:992px) {
-   .homePage{
-     padding-bottom: 40px;
-   }
-   .home-infos{
-     margin-top: 70px;
-   }
+  .homePage {
+    padding-bottom: 40px;
+  }
+
+  .home-infos {
+    margin-top: 70px;
+  }
 }

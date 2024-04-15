@@ -84,20 +84,20 @@ function Consulting() {
                         <p className="card-item2-text">
                             Telefon raqamingizni yozib qoldiring, biz Siz bilan bog'lanamiz va barcha savollaringizga javob beramiz!
                         </p>
-                      <form id="myForm" onSubmit={onFinish}>
-                      <div className="consult-form">
-                            <input className="form-input" type="text" placeholder="Ismingiz" id="name"/>
-                            <input
-                                id="phone"
-                                className="form-input"
-                                type="tel"
-                                defaultValue="+998 "
-                                placeholder="Telefon raqamingiz"
-                                ref={phoneInputRef}
-                            />
-                            <button className="form-btn" type="submit">Yuborish</button>
-                        </div>
-                      </form>
+                        <form id="myForm" onSubmit={onFinish}>
+                            <div className="consult-form">
+                                <input className="form-input" type="text" placeholder="Ismingiz" id="name" />
+                                <input
+                                    id="phone"
+                                    className="form-input"
+                                    type="tel"
+                                    defaultValue="+998 "
+                                    placeholder="Telefon raqamingiz"
+                                    ref={phoneInputRef}
+                                />
+                                <button className="form-btn" type="submit">Yuborish</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

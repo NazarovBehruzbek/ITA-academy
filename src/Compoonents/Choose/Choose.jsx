@@ -4,7 +4,7 @@ import axios from "axios";
 import { message } from "antd";
 import Data from "../CoursesData/Courses"
 
-function Choose () {
+function Choose() {
     const phoneInputRef = useRef(null);
     useEffect(() => {
         const input = phoneInputRef.current;
@@ -56,43 +56,43 @@ function Choose () {
     };
     return (
         <>
-        <div className="choose">
-            <div className="container">
-             <div className="choose-wrapper">
-             <div className="choose-infos" data-aos="flip-left">
-                    <h2 className="choose-title" >Yo'nalishni tanlay olmayapsizmi?</h2>
-                    <p className="choose-text">Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta qo'ng'iroq qilishadi.</p>
-                </div>
-                <div className="choose-forms" data-aos="flip-left">
-                    <form id="courseForm" onSubmit={onFinish}>
-                    <div className="choose-form">
-                            <input className="choose-input" type="text" placeholder="Ismingiz" id="nameInput" required/>
-                            <select className="choose-select"  name="Kurs" id="chooseKurs"   aria-label="Kursni tanlang" required>
-                                <option value="" disabled>Kursni tanlang</option>
-                                {
-                                    Data && Data.map((item,index)=>(
-                                        <option key={index} className="choose-option" value={item?.nameUZ}>{item?.nameUZ}</option>
-                                    ))
-                                }
-                            </select>
-                            <input
-                                id="phoneNumber"
-                                className="choose-input"
-                                type="tel"
-                                defaultValue="+998 "
-                                placeholder="Telefon raqamingiz"
-                                ref={phoneInputRef}
-                                required
-                            />
-                            <button className="choose-btn" type="submit">Kursga yozilish</button>
+            <div className="choose">
+                <div className="container">
+                    <div className="choose-wrapper">
+                        <div className="choose-infos" data-aos="flip-left">
+                            <h2 className="choose-title" >Yo'nalishni tanlay olmayapsizmi?</h2>
+                            <p className="choose-text">Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta qo'ng'iroq qilishadi.</p>
                         </div>
-                    </form>
+                        <div className="choose-forms" data-aos="flip-left">
+                            <form id="courseForm" onSubmit={onFinish}>
+                                <div className="choose-form">
+                                    <input className="choose-input" type="text" placeholder="Ismingiz" id="nameInput" required />
+                                    <select className="choose-select" name="Kurs" id="chooseKurs" aria-label="Kursni tanlang" required>
+                                        <option value="" disabled>Kursni tanlang</option>
+                                        {
+                                            Data && Data.map((item, index) => (
+                                                <option key={index} className="choose-option" value={item?.nameUZ}>{item?.nameUZ}</option>
+                                            ))
+                                        }
+                                    </select>
+                                    <input
+                                        id="phoneNumber"
+                                        className="choose-input"
+                                        type="tel"
+                                        defaultValue="+998 "
+                                        placeholder="Telefon raqamingiz"
+                                        ref={phoneInputRef}
+                                        required
+                                    />
+                                    <button className="choose-btn" type="submit">Kursga yozilish</button>
+                                </div>
+                            </form>
 
+                        </div>
+
+                    </div>
                 </div>
-
-             </div>
             </div>
-        </div>
         </>
     )
 }

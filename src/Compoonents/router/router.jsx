@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/", 
-        element: <Home/>, 
+        path: "/",
+        element: <Home />,
       },
       {
         path: "/about",
@@ -20,11 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/course",
-        element: < Courses/>
+        element: < Courses />
       },
       {
         path: "/course/:id",
-        element: <CourseCategory/>
+        element: <CourseCategory />
       }
     ],
   },

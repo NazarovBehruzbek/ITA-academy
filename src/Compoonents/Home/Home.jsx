@@ -9,24 +9,24 @@ import Choose from "../Choose/Choose";
 import ModalForm from "../ModalForm/ModalForm";
 
 function Home() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
   };
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-    return (
-        <>
-            <HomePage showModal={showModal}/>
-            <About />
-            <Courses />
-            <Consulting />
-            <Teachers />
-            <Fakt />
-            <Choose />
-            <ModalForm isModalOpen={isModalOpen} handleCancel={handleCancel}/>
-        </>
-    )
+  return (
+    <>
+      <HomePage showModal={showModal} />
+      <About />
+      <Courses />
+      <Consulting />
+      <Teachers />
+      <Fakt />
+      <Choose />
+      <ModalForm isModalOpen={isModalOpen} handleCancel={handleCancel} />
+    </>
+  )
 }
 export default Home;

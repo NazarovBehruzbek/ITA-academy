@@ -1,40 +1,46 @@
-.courses{
+.courses {
     background-color: #F2F4F9;
     width: 100%;
     margin-top: 50px;
     padding: 60px 0;
     padding-bottom: 130px;
 }
-.course-title{
+
+.course-title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
     font-family: SF Pro Display;
 }
-.wrapper{
+
+.wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     cursor: pointer;
 }
 
-.card{
-    background-color:white;
+.card {
+    background-color: white;
     padding: 15px;
-    border-radius:20px;
+    border-radius: 20px;
     transition: .8s ease;
     box-shadow: rgb(214, 196, 196) 0px 0px 10px;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: rgb(115, 98, 99) 0px 0px 10px;
 }
-.course-img{
+
+.course-img {
     width: 100%;
 }
-.course-infos{
+
+.course-infos {
     position: relative;
 }
-.tulov{
+
+.tulov {
     background: var(--main-color);
     border-radius: 8px 8px 8px 0;
     padding: 0.5rem;
@@ -44,7 +50,8 @@
     top: -10px;
     left: -23px;
 }
-.tulov::after{
+
+.tulov::after {
     content: "";
     position: absolute;
     left: 0;
@@ -53,12 +60,14 @@
     border-left: 8px solid var(--main-color);
     transform: rotate(90deg);
 }
-.course-sub-title{
+
+.course-sub-title {
     padding-top: 50px;
     font-family: SF Pro Display;
     letter-spacing: 2px;
 }
-.icon-name{
+
+.icon-name {
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 700;
@@ -69,20 +78,23 @@
     color: #FFF;
     letter-spacing: 2px;
 }
-.course-icon{
+
+.course-icon {
     width: 12.8px;
     height: 12.8px;
     margin-right: 5px;
 
 }
-.price-title{
+
+.price-title {
     font-size: 20px;
     color: #7E8CA0;
     margin: 20px 0;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
-.price{
+
+.price {
     font-style: normal;
     font-weight: 550;
     font-size: 20px;
@@ -92,19 +104,22 @@
     color: rgb(44, 42, 42);
     letter-spacing: 1px;
 }
-.duration{
+
+.duration {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     color: rgba(0, 9, 41, 0.7);
 }
-.clock{
+
+.clock {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     float: left;
 }
-.course-duration{
+
+.course-duration {
     margin-top: 50px;
-    
+
 }
