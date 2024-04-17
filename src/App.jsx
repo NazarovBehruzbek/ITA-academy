@@ -18,7 +18,7 @@ function App() {
     
     AOS.init({
         duration: 900,
-        offset: 100,
+        offset: 10,
         easing: 'ease-in-out', 
     });
 }, []);

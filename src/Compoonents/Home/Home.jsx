@@ -7,6 +7,7 @@ import Teachers from "../Teachers/Teachers";
 import Fakt from "../Fakt/Fakt";
 import Choose from "../Choose/Choose";
 import ModalForm from "../ModalForm/ModalForm";
+import Fikrlar from "../Fikrlar/Fikrlar";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,6 +21,7 @@ function Home() {
     <>
       <HomePage showModal={showModal} />
       <About />
+      <Fikrlar/>
       <Courses />
       <Consulting />
       <Teachers />

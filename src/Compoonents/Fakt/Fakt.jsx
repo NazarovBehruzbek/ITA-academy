@@ -19,7 +19,7 @@ function Fakt() {
                             <div className="line"></div>
                         </div>
                         <div className="fakt-card" data-aos="flip-up">
-                            <p className="fakt-number">2</p>
+                            <p className="fakt-number">6</p>
                             <p className="fakt-text">mentorlarimizning tajribasi eng kamida 2 yil</p>
                         </div>
                     </div>
