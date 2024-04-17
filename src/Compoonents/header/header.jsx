@@ -55,7 +55,7 @@ function Header({ showModal }) {
                         <div className="menu">
                             <li className="nav-item"><NavLink to="/about">Biz haqimizda</NavLink></li>
                             <li className="nav-item"><NavLink to="/course">Kurslar</NavLink></li>
-                            {/* <li className="nav-item"><NavLink className="nav-menu-item">Mentorlar</NavLink></li> */}
+                            <li className="nav-item"><NavLink to="/news">Yangiliklar</NavLink></li>
                         </div>
                         <div className="menu-btn">
                             <li className="nav-item" onClick={showModal}><div className="nav-btn">Bepul konsultatsiya</div></li>

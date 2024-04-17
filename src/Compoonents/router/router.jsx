@@ -4,6 +4,7 @@ import AboutWe from './../AboutWe/AboutWe';
 import CourseCategory from "./../CourseCategory/CourseCategory"
 import Home from "../Home/Home";
 import Courses from "../Courses/Courses";
+import News from "../News/News";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/course",
         element: < Courses />
+      },
+      {
+        path: "/news",
+        element: < News/>
       },
       {
         path: "/course/:id",
