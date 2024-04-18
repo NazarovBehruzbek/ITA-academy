@@ -1,51 +1,45 @@
-import React from "react";
-import { Collapse } from "antd";
-const items = [
-  {
-    key: "1",
-    label: "This is panel header 1",
-    children: (
-      <p>
-        A dog is a type of domesticated animal. Known for its loyalty and
-        faithfulness, it can be found as a welcome guest in many households
-        across the world.
-      </p>
-    ),
-  },
-  {
-    key: "2",
-    label: "This is panel header 2",
-    children: (
-      <p>
-        A dog is a type of domesticated animal. Known for its loyalty and
-        faithfulness, it can be found as a welcome guest in many households
-        across the world.
-      </p>
-    ),
-  },
-  {
-    key: "3",
-    label: "This is panel header 3",
-    children: (
-      <p>
-        A dog is a type of domesticated animal. Known for its loyalty and
-        faithfulness, it can be found as a welcome guest in many households
-        across the world.
-      </p>
-    ),
-  },
-];
-import "./Faq.css";
-
+import React, { useState } from 'react';
+import "./Faq.css"
 const Faq = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const handleClick = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+  const items = [
+    {
+      title: 'What is React?',
+      content: 'React is a front-end JavaScript library for building user interfaces.',
+    },
+    {
+      title: 'Why use React?',
+      content: 'React is a favorite among developers due to its simplicity and flexibility.',
+    },
+    {
+      title: 'How do you use React?',
+      content: 'You use React by creating components that represent different parts of your UI.',
+    },
+  ];
+
   return (
-    <section className="faq">
-      <div className="container">
-        <h2>Faq</h2>
-        <Collapse accordion items={items} />
+<div className="faq">
+<div className="container">
+      <h2 className='faq-title' data-aos="flip-up">Ko'p beriladigan savollar</h2>
+    {items.map((item, index) => (
+      <div key={index} className='accordion-item' data-aos="zoom-in">
+        <div className={`accordion-title ${activeIndex === index ? 'active' : ''}`} onClick={() => handleClick(index)} >
+          <h3>{item.title}</h3>
+          <span className="icon"><span>{activeIndex === index ? '▲' : '▼'}</span></span>
+        </div>
+        {activeIndex === index && (
+          <div className="accordion-content">
+            <p>{item.content}</p>
+          </div>
+        )}
       </div>
-    </section>
-  );
+    ))}
+  </div>
+</div>
+);
 };
 
 export default Faq;

@@ -1,10 +1,38 @@
 .faq {
-    padding: 80px 0;
-
-    & h2 {
-        margin-bottom: 40px;
-        font-size: 40px; 
-        font-weight: 700;
-        text-align: center;
+    .container {
+        width: 80%;
+        padding: 50px 0;
     }
+}
+
+.faq-title {
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    overflow: hidden;
+    transition: 1s ease-in;
+}
+
+.accordion-title {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-title span.icon {
+    font-size: 18px;
+    margin-left: auto;
+}
+
+.accordion-content {
+    padding: 10px;
 }
