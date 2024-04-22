@@ -76,7 +76,7 @@ function Teachers() {
                                 <div>
                                     <h3 className='user-title'>Nazarov Behruzbek</h3>
                                     <p className='user-text'>Mentor: Grafik dizayn</p>
-                                </div>assets
+                                </div>
                             </div>
                             <p className='teacher-about'>4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.</p>
 

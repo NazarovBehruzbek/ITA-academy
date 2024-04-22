@@ -13,6 +13,7 @@ function Header({ showModal }) {
     };
     const onClose = () => {
         setOpen(false);
+        window.scrollTo(0, 0);
     };
     useEffect(() => {
         const handleScroll = () => {
@@ -41,6 +42,9 @@ function Header({ showModal }) {
         }
         setOpen(false)
     };
+    const toTop = () => {
+        window.scrollTo(0, 0);
+      }
     return (
         <>
             <div className={`nav ${scrolled ? 'scrolled' : ''}`}>
@@ -53,9 +57,9 @@ function Header({ showModal }) {
                                 </NavLink></li>
                         </div>
                         <div className="menu">
-                            <li className="nav-item"><NavLink to="/about">Biz haqimizda</NavLink></li>
-                            <li className="nav-item"><NavLink to="/course">Kurslar</NavLink></li>
-                            <li className="nav-item"><NavLink to="/news">Yangiliklar</NavLink></li>
+                            <li className="nav-item" onClick={toTop}><NavLink to="/about">Biz haqimizda</NavLink></li>
+                            <li className="nav-item" onClick={toTop}><NavLink to="/course">Kurslar</NavLink></li>
+                            <li className="nav-item" onClick={toTop}><NavLink to="/news">Yangiliklar</NavLink></li>
                         </div>
                         <div className="menu-btn">
                             <li className="nav-item" onClick={showModal}><div className="nav-btn">Bepul konsultatsiya</div></li>
@@ -70,6 +74,9 @@ function Header({ showModal }) {
                 </div>
                 <div className="hamburger-menu">
                     <NavLink to="/course" className="hamburger-menu-item" onClick={onClose}>Kurslar</NavLink>
+                </div>
+                <div className="hamburger-menu">
+                    <NavLink to="/news" className="hamburger-menu-item" onClick={onClose}>Yangiliklar</NavLink>
                 </div>
             </Drawer>
         </>

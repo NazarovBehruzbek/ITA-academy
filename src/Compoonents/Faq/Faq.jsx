@@ -7,12 +7,12 @@ const Faq = () => {
   };
   const items = [
     {
-      title: 'What is React?',
-      content: 'React is a front-end JavaScript library for building user interfaces.',
+      title: "Kursni bitirganimdan keyiin ish topa olamanmi?",
+      content: "Ha albatta kursni muvaffaqiyatli tugatgan o'quvchilarimiz hozirda bir nechta kampaniyalarda ishlayapti.Siz ham shular qatorida bo'lishingiz mumkun ",
     },
     {
-      title: 'Why use React?',
-      content: 'React is a favorite among developers due to its simplicity and flexibility.',
+      title: "Frontend yoki boshqa kurslarni tugatganman nima qilsam bo'ladi",
+      content: "Biror bir kursni 100% to'liq tugatib ( masalan frontend bo'lsa JS advanced biror bir framework ) + gitda kamida ikkita loyihangiz bo'lsa ish uchun suhbatga chaqiramiz. Lekin chala yarim bitirgan bo'lsangiz Frontend kursni boshidan boshlab o'rgatamiz.",
     },
     {
       title: 'How do you use React?',

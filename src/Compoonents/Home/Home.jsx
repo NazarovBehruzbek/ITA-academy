@@ -9,6 +9,7 @@ import Choose from "../Choose/Choose";
 import ModalForm from "../ModalForm/ModalForm";
 import Fikrlar from "../Fikrlar/Fikrlar";
 import Faq from "../Faq/Faq";
+import Hamkorlar from "../Hamkorlar/Hamkorlar";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,7 @@ function Home() {
       <Teachers />
       <Fakt />
       <Faq />
+      <Hamkorlar/>
       <Choose />
       <ModalForm isModalOpen={isModalOpen} handleCancel={handleCancel} />
     </>

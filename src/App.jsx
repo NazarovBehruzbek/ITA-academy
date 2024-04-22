@@ -15,7 +15,6 @@ function App() {
     setIsModalOpen(false);
   };
   useEffect(() => {
-    
     Aos.init({
         duration: 900,
         offset: 10,
