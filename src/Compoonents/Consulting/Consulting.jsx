@@ -37,7 +37,7 @@ function Consulting() {
     const onFinish = (event) => {
         event.preventDefault()
         const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
-        const chat_id = 7045653787;
+        const chat_id = -1002092768784;
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const method = 'POST';
         const name = document.getElementById("name").value;

@@ -35,7 +35,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
         e.preventDefault();
 
         const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
-        const chat_id = 7045653787;
+        const chat_id = -1002092768784;
 
         const messageContent = `Ismi: ${name}\nTelefon raqami: ${phone}\nKurs: ${selectedCourse}`;
 
