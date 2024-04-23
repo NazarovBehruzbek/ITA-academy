@@ -1,8 +1,11 @@
 import React from 'react'
 import "./Fikrlar.css"
-import fikr1 from "../../videos/fikr1.mp4"
-import fikr3 from "../../videos/fikr3.mp4"
-import rasm from "../../assets/person.jpg"
+import video1 from "../../videos/video1.mp4"
+import video2 from "../../videos/video2.mp4"
+import video3 from "../../videos/video3.mp4"
+import video4 from "../../videos/video4.mp4"
+import video5 from "../../videos/video5.mp4"
+import video6 from "../../videos/video6.mp4"
 
 export default function 
 () {
@@ -12,38 +15,45 @@ export default function
           <div className="fikr-wrapper">
             <div className="fikr-card" data-aos="zoom-in">
                 <div className="fikr-card-item">
-                   <video controls src={fikr3} poster={rasm}></video>
+                   <video controls src={video1} ></video>
+                </div>
+                <h3>Hojimuhammedov Muhammadislom</h3>
+                <p>"Front end" kursi bitiruvchisi</p>
+            </div>
+            <div className="fikr-card" data-aos="zoom-in">
+                <div className="fikr-card-item">
+                <video controls src={video2} ></video>
+                </div>
+                <h3>Haydarov Asilbek</h3>
+                <p>"Front end" kursi bitiruvchisi</p>
+            </div>
+            <div className="fikr-card" data-aos="zoom-in">
+                <div className="fikr-card-item">
+                <video controls src={video3} ></video>
+                </div>
+                <h3>Abdullayev Farruh</h3>
+                <p>"Backend" kursi bitiruvchisi</p>
+            </div>
+            <div className="fikr-card" data-aos="zoom-in">
+                <div className="fikr-card-item">
+                <video controls src={video4}></video>
+                </div>
+                <h3>Samandar</h3>
+                <p>"Front end" kursi bitiruvchisi</p>
+            </div>
+            <div className="fikr-card" data-aos="zoom-in">
+                <div className="fikr-card-item">
+                <video controls src={video5} ></video>
+                </div>
+                <h3>Lazizbek</h3>
+                <p>"Front end" kursi o'quvchisi</p>
+            </div>
+            <div className="fikr-card" data-aos="zoom-in">
+                <div className="fikr-card-item">
+                <video controls src={video6} ></video>
                 </div>
                 <h3>Jafarbek</h3>
-                <p>"Python Backend" kursi o'quvchis</p>
-            </div>
-            <div className="fikr-card" data-aos="zoom-in">
-                <div className="fikr-card-item">
-                <video controls src={fikr1} poster={rasm}></video>
-                </div>
-                <h3>Behruzbek Nazarov</h3>
-                <p>"Front end" kursi bitiruvchisi</p>
-            </div>
-            <div className="fikr-card" data-aos="zoom-in">
-                <div className="fikr-card-item">
-                <video controls src={fikr3} poster={rasm}></video>
-                </div>
-                <h3>Behruzbek Nazarov</h3>
-                <p>"Front end" kursi bitiruvchisi</p>
-            </div>
-            <div className="fikr-card" data-aos="zoom-in">
-                <div className="fikr-card-item">
-                <video controls src={fikr1} poster={rasm}></video>
-                </div>
-                <h3>Behruzbek Nazarov</h3>
-                <p>"Front end" kursi bitiruvchisi</p>
-            </div>
-            <div className="fikr-card" data-aos="zoom-in">
-                <div className="fikr-card-item">
-                <video controls src={fikr3} poster={rasm}></video>
-                </div>
-                <h3>Behruzbek Nazarov</h3>
-                <p>"Front end" kursi bitiruvchisi</p>
+                <p>"Python Backend" kursi o'quvchisi</p>
             </div>
           </div>
     </div>
