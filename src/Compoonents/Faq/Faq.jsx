@@ -15,8 +15,8 @@ const Faq = () => {
       content: "Biror bir kursni 100% to'liq tugatib ( masalan frontend bo'lsa JS advanced biror bir framework ) + gitda kamida ikkita loyihangiz bo'lsa ish uchun suhbatga chaqiramiz. Lekin chala yarim bitirgan bo'lsangiz Frontend kursni boshidan boshlab o'rgatamiz.",
     },
     {
-      title: 'How do you use React?',
-      content: 'You use React by creating components that represent different parts of your UI.',
+      title: 'Flutterda dasturlashda qanday dizayn patternlaridan foydalaniladi?',
+      content: 'Flutterda Widget Tree, State Management, BLoC (Business Logic Component), MVVM (Model-View-ViewModel), Provider, GetX kabilardan foydalaniladi',
     },
   ];
 
