@@ -22,8 +22,8 @@ export default function News() {
                     </div>
                     <div className="news-card">
                     <img src={news3} alt="Error" />
-                    <h3>O'quvchilarni taqdirlash</h3>
-                        <p>Imtihonlardan yaxshi natijalarga erishgan o'quvchilarni taqdirlash va ularga tashakkurnomalar berildi. Bundan tashqari o'quvchilar bilan individual suhbatlar tashkil qilindi.</p>
+                    <h3>O'quvchilarni o'rtasida futbol</h3>
+                        <p>Yakshanba kuni markazimiz o'quvhilari o'rtasida futbol musobaqasi bo'lib o'tadi. Barchani ushbu o'yinga chorlaymiz.</p>
                     </div>
                 </div>
             </div>
