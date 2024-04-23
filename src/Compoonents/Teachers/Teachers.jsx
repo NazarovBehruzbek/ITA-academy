@@ -2,10 +2,13 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import "./Teacgers.css"
-import left from "../../assets/arrow-left.svg"
-import user from "../../assets/backend.png"
-
+import "./Teacgers.css";
+import left from "../../assets/arrow-left.svg";
+import Islom from "../../assets/Islom.png";
+import Mohlaroyim from "../../assets/Mohlaroyim.jpg";
+import Gulbahor from "../../assets/Gulbahor.jpg";
+import Aziza from "../../assets/Aziza.jpg";
+import Marjonabonu from "../../assets/Marjonabonu.jpg";
 function Teachers() {
     let sliderRef = useRef(null);
     const next = () => {
@@ -50,36 +53,53 @@ function Teachers() {
                         {...settings}>
                         <div className='teachers-card' data-aos="zoom-in">
                             <div className="infos-card">
-                                <img className='user-img' src={user} alt="Error" />
+                                <img className='user-img' src={Islom} alt="Error" />
                                 <div>
-                                    <h3 className='user-title'>Nazarov Behruzbek</h3>
-                                    <p className='user-text'>Mentor: Grafik dizayn</p>
+                                    <h3 className='user-title'>Raximjanov Islombek</h3>
+                                    <p className='user-text'>Mentor: Frontend dasturchi</p>
                                 </div>
                             </div>
-                            <p className='teacher-about'>4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.</p>
-
+                            <p className='teacher-about'>Tajribasi—1,5 yil, Til bo'yicha daraja—rus tili B1, Qo'shimcha ma'lumotlar—talaba(TATU 4-kurs) </p>
                         </div>
                         <div className='teachers-card' data-aos="zoom-in">
                             <div className="infos-card">
-                                <img className='user-img' src={user} alt="Error" />
+                                <img className='user-img' src={Mohlaroyim} alt="Error" />
                                 <div>
-                                    <h3 className='user-title'>Nazarov Behruzbek</h3>
-                                    <p className='user-text'>Mentor: Grafik dizayn</p>
+                                    <h3 className='user-title'>Komiljonova Mohlaroyim</h3>
+                                    <p className='user-text'>Mentor: Arab tili </p>
                                 </div>
                             </div>
-                            <p className='teacher-about'>4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.</p>
-
+                            <p className='teacher-about'>Tajribasi—2 yil, Til bo’yicha daraja–Arab tili B2, Qo’shimcha ma’lumotlar (Islom institutida talaba)</p>
                         </div>
                         <div className='teachers-card' data-aos="zoom-in">
                             <div className="infos-card">
-                                <img className='user-img' src={user} alt="Error" />
+                                <img className='user-img' src={Gulbahor} alt="Error" />
                                 <div>
-                                    <h3 className='user-title'>Nazarov Behruzbek</h3>
+                                    <h3 className='user-title'>G'ofurova Gulbahor</h3>
                                     <p className='user-text'>Mentor: Grafik dizayn</p>
                                 </div>
                             </div>
-                            <p className='teacher-about'>4+ yil tajriba va 50 dan ortiq o'quvchilar. «DizaynLab» taʼsischisi, TSTrU da bo‘limi boshlig‘i.</p>
-
+                            <p className='teacher-about'>Tajribasi—4 yil, Til bo'yicha daraja—B1(rus tili), Qo'shimcha ma'lumot—talaba(Moliya 3-kurs) </p>                    
+                        </div>
+                        <div className='teachers-card' data-aos="zoom-in">
+                            <div className="infos-card">
+                                <img className='user-img' src={Marjonabonu} alt="Error" />
+                                <div>
+                                    <h3 className='user-title'>Абдусаттарова Маржонабону </h3>
+                                    <p className='user-text'>Mentor: Grafik dizayn</p>
+                                </div>
+                            </div>
+                            <p className='teacher-about'>Tajribasi–1,5 yil, Til bilish darajasi-– rus tili B2,ingiz tili B2, O’quvchilari soni – 500 +</p>                    
+                        </div>
+                        <div className='teachers-card' data-aos="zoom-in">
+                            <div className="infos-card">
+                                <img className='user-img' src={Aziza} alt="Error" />
+                                <div>
+                                    <h3 className='user-title'>Xamroyeva Azizabonu</h3>
+                                    <p className='user-text'>Mentor: Adminstrator</p>
+                                </div>
+                            </div>
+                            <p className='teacher-about'>Tajribasi—1yil, Qo'shimcha ma'lumot— shartnoma ishlari bo'yicha ma'lumoti bor, talaba(yuridik 1-kurs) </p>                    
                         </div>
                     </Slider>
                     <div className='arrows'>

@@ -16,7 +16,7 @@ function Foter({ showModal }) {
       <div className="Foter">
         <div className="container">
           <div className="foter-infos">
-            <div className="foter-logo" data-aos="flip-up"><img className="logo" src={logo} alt="Logo" /></div>
+            <div className="foter-logo" data-aos="flip-up"><Link to="/" onClick={toTop}><img className="logo" src={logo} alt="Logo" /></Link></div>
             <div className="foter-menu" data-aos="flip-up">
               <Link to="/course" onClick={toTop}><p>Kurslar</p></Link>
               <Link to="/about" onClick={toTop}>  <p>Biz haqimizda</p></Link>
@@ -27,16 +27,16 @@ function Foter({ showModal }) {
 
               <div className="social">
                 <div className="social-item">
-                  <a href="" target="_blank"> <img className="instagram-img" src={instagram} alt="Error" /></a>
+                  <a href="https://www.instagram.com/it_time_academy" target="_blank"> <img className="instagram-img" src={instagram} alt="Error" /></a>
                 </div>
                 <div className="social-item">
                   <a href="" target="_blank"> <img className="facebok-img" src={facebook} alt="Error" /></a>
                 </div>
                 <div className="social-item">
-                  <a href="" target="_blank"><img className="telegram-img" src={telegram} alt="Error" /></a>
+                  <a href="https://t.me/it_time" target="_blank"><img className="telegram-img" src={telegram} alt="Error" /></a>
                 </div>
                 <div className="social-item">
-                  <a href="" target="_blank"><img className="youtube-img" src={youtube} alt="Error" /></a>
+                  <a href="https://www.youtube.com/@it-time-academy" target="_blank"><img className="youtube-img" src={youtube} alt="Error" /></a>
                 </div>
               </div>
             </div>
