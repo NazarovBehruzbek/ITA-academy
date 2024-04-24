@@ -7,8 +7,9 @@
 
 .fikr-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 50px;
+  
     cursor: pointer;
 }
 
@@ -31,15 +32,9 @@
     border-radius: 20px;
     box-shadow: rgb(214, 196, 196) 0px 0px 10px;
 
-    & img {
-        width: 100%;
-        height: 350px;
-        border-radius: 20px;
-    }
-
     & video {
         width: 100%;
-        height: 500px;
+        height: 450px;
         object-fit:fill;
         border-radius: 20px;
     }

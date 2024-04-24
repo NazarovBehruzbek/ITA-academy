@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick';
 import "./Hamkorlar.css"
-import itbilim from "../../assets/itbilim.png";
+import itbilim from "../../assets/itbilim.jpg";
 import homekit from "../../assets/hamkor1.png";
 import dezinfeksiya from "../../assets/dezinfiksiya.png";
 import ataev from  "../../assets/atayev.png";
@@ -15,7 +15,7 @@ export default function Hamkorlar() {
         speed: 500,
         slidesToShow: 4,
         autoplay: true,           
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 768,
