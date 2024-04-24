@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Consulting.css";
 import bannerimg1 from "../../assets/banner-img2.png";
 import bannerimg2 from "../../assets/banner-img1.png";
@@ -8,6 +8,7 @@ import { message } from "antd";
 
 function Consulting() {
     const phoneInputRef = useRef(null);
+    const [loading,setLoading] = useState(false);
 
     // Handle events when the component mounts and unmounts
     useEffect(() => {
@@ -35,6 +36,7 @@ function Consulting() {
     }, []);
 
     const onFinish = (event) => {
+        setLoading(true);
         event.preventDefault()
         const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
         const chat_id = -1002092768784;
@@ -56,7 +58,10 @@ function Consulting() {
         }).catch(error => {
             message.error("Xatolik")
             console.log(error);
-        });
+        })
+        .finally(()=>{
+            setLoading(false);
+        })
     };
 
     return (
@@ -95,7 +100,7 @@ function Consulting() {
                                     placeholder="Telefon raqamingiz"
                                     ref={phoneInputRef}
                                 />
-                                <button className="form-btn" type="submit">Yuborish</button>
+                              <button type="submit" className="form-btn" disabled={loading}>{loading ? 'Yuborilmoqda...' : 'Yuborish'}</button>
                             </div>
                         </form>
                     </div>

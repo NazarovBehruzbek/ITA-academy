@@ -8,6 +8,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('+998 ');
     const [selectedCourse, setSelectedCourse] = useState('');
+    const [loading, setLoading] = useState(false); // Initialize loading state as false
 
     useEffect(() => {
         const input = phoneInputRef.current;
@@ -32,6 +33,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
     }, [phone]);
 
     const handleSubmit = async (e) => {
+        setLoading(true); // Set loading state to true when form is submitted
         e.preventDefault();
 
         const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
@@ -50,10 +52,12 @@ function ModalForm({ isModalOpen, handleCancel }) {
         } catch (error) {
             message.error('Yuborishda xatolik');
             console.error(error);
+        } finally {
+            setLoading(false); // Reset loading state regardless of success or failure
+            setName('');
+            setPhone('+998 ');
+            setSelectedCourse('');
         }
-        setName('');
-        setPhone('+998 ');
-        setSelectedCourse('');
     };
 
     return (
@@ -100,7 +104,7 @@ function ModalForm({ isModalOpen, handleCancel }) {
                         ref={phoneInputRef}
                         aria-label="Telefon raqamingiz"
                     />
-                    <button type="submit" className="form-btn">Yuborish</button>
+                    <button type="submit" className="form-btn" disabled={loading}>{loading ? 'Yuborilmoqda...' : 'Yuborish'}</button>
                 </div>
             </form>
         </Modal>

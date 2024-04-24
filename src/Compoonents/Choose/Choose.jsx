@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Choose.css"
 import axios from "axios";
 import { message } from "antd";
@@ -6,6 +6,7 @@ import Data from "../CoursesData/Courses"
 
 function Choose() {
     const phoneInputRef = useRef(null);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
         const input = phoneInputRef.current;
         const handleFocus = () => {
@@ -30,7 +31,8 @@ function Choose() {
         };
     }, []);
     const onFinish = (event) => {
-        event.preventDefault()
+        setLoading(true);
+        event.preventDefault();
         const token = "6395452715:AAFCxS69thPtZMXSFbLHyeLr17sYQqESJnc";
         const chat_id = -1002092768784;
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
@@ -52,7 +54,10 @@ function Choose() {
         }).catch(error => {
             message.error("Xatolik")
             console.log(error);
-        });
+        })
+        .finally(()=>{
+            setLoading(false);
+        })
     };
     return (
         <>
@@ -84,7 +89,7 @@ function Choose() {
                                         ref={phoneInputRef}
                                         required
                                     />
-                                    <button className="choose-btn" type="submit">Kursga yozilish</button>
+                                    <button type="submit" className="form-btn" disabled={loading}>{loading ? 'Yuborilmoqda...' : 'Kursga yozilish'}</button>
                                 </div>
                             </form>
 
