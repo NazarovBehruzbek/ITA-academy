@@ -91,7 +91,7 @@ function Consulting() {
                         </p>
                         <form id="myForm" onSubmit={onFinish}>
                             <div className="consult-form">
-                                <input className="form-input" type="text" placeholder="Ismingiz" id="name" />
+                                <input className="form-input" type="text" placeholder="Ismingiz" id="name" required/>
                                 <input
                                     id="phone"
                                     className="form-input"
@@ -99,6 +99,7 @@ function Consulting() {
                                     defaultValue="+998 "
                                     placeholder="Telefon raqamingiz"
                                     ref={phoneInputRef}
+                                    required
                                 />
                               <button type="submit" className="form-btn" disabled={loading}>{loading ? 'Yuborilmoqda...' : 'Yuborish'}</button>
                             </div>
