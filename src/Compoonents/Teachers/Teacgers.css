@@ -28,6 +28,7 @@
 }
 
 .teachers-card {
+    height: 234px;
     border: 1px solid var(--main-color);
     border-radius: 20px;
     padding: 20px;

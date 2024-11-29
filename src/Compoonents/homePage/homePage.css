@@ -12,7 +12,7 @@
 
 .home-title {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 4.1875rem;
   max-width: 38.9375rem;
   color: #000;
@@ -20,7 +20,7 @@
 
 .sub-title {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.625rem;
   max-width: 31.5rem;
   margin: .75rem 0 0;
@@ -28,9 +28,8 @@
 }
 
 .home-btn {
-  font-family: SF Pro Display;
-  font-weight: 500;
-  font-size: 1.125rem;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.5rem;
   border: none;
   color: #fff;
@@ -41,6 +40,10 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+}
+
+.home-btn:hover {
+  box-shadow: rgb(198, 2, 5) 0px 0px 2px;
 }
 
 .home-img {

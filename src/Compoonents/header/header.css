@@ -46,15 +46,16 @@
 .nav-item {
     text-decoration: none;
     list-style: none;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
-    font-size: 20px;
-    color: black !important;
+    font-size: 18px;
+    color: #333 !important;
+    /* color: black !important; */
 }
 
 .hamburger-menu-item {
-    color: black !important;
+    color: #333 !important;
     font-size: 18px;
     display: flex;
     margin-bottom: 10px;
@@ -75,9 +76,8 @@
 .nav-btn {
     background: linear-gradient(278.99deg, rgb(244, 16, 16) 30.32%, rgb(198, 2, 5) 100%);
     padding: 12px 20px;
-    font-family: "DM Sans";
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
